@@ -19,6 +19,9 @@ app.get('/big',  (req, res) =>{
 app.get('/greeting/:id',  (req, res) =>{
   res.send('Hello! The id was ' + req.params.id)
 })
+app.get('/TDP/:party_name',  (req, res) =>{
+  res.send('this party will win ' + req.params.party_name+'because its powerful')
+})
 
 app.get('/yo/:buddy',  (req, res) =>{
   res.send('<h1>Yo, ' + req.params.buddy + '!</h1>')
